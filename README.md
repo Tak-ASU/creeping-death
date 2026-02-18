@@ -3,7 +3,7 @@
 ## 🔍 Project Overview & Methodology
 Creeping Death is a predictive maintenance framework I am developing to detect the subtle, "creeping" signals of degradation in large-scale industrial systems. This project is specifically designed for high-stakes assets where failure leads to significant downtime—such as **mining conveyor belts, massive dump truck engines, and heavy-duty mill components**. It addresses the "cold start" problem: providing immediate value when explicit failure labels are sparse or non-existent.
 
-I have designed the architecture to utilize a hybrid evolution pipeline: starting with [Unsupervised Anomaly Detection](https://en.wikipedia.org/wiki/Anomaly_detection) for immediate deployment, and transitioning into a self-improving supervised model via **[Weak Supervision](https://en.wikipedia.org/wiki/Weak_supervision)** and my own active learning loops.
+I have designed the architecture to utilize a hybrid evolution pipeline: starting with [Unsupervised Anomaly Detection](https://en.wikipedia.org/wiki/Anomaly_detection) for immediate deployment, and transitioning into a self-improving supervised model via [Weak Supervision](https://en.wikipedia.org/wiki/Weak_supervision) and my own active learning loops.
 
 ## 🔨 Strategic Development Roadmap
 
