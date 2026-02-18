@@ -3,12 +3,12 @@
 ## 🔍 Project Overview & Methodology
 Creeping Death is a predictive maintenance framework I am developing to detect the subtle, "creeping" signals of degradation in large-scale industrial systems. This project is specifically designed for high-stakes assets where failure leads to significant downtime—such as **mining conveyor belts, massive dump truck engines, and heavy-duty mill components**. It addresses the "cold start" problem: providing immediate value when explicit failure labels are sparse or non-existent.
 
-I have designed the architecture to utilize a hybrid evolution pipeline: starting with **[Unsupervised Anomaly Detection](https://en.wikipedia.org/wiki/Anomaly_detection)** for immediate deployment, and transitioning into a self-improving supervised model via **[Weak Supervision](https://en.wikipedia.org/wiki/Weak_supervision)** and my own active learning loops.
+I have designed the architecture to utilize a hybrid evolution pipeline: starting with [Unsupervised Anomaly Detection](https://en.wikipedia.org/wiki/Anomaly_detection) for immediate deployment, and transitioning into a self-improving supervised model via **[Weak Supervision](https://en.wikipedia.org/wiki/Weak_supervision)** and my own active learning loops.
 
 ## 🔨 Strategic Development Roadmap
 
 ### 1. Phase I: Unsupervised Bootstrapping
-* **Anomaly Extraction:** I will implement **[Isolation Forests](https://en.wikipedia.org/wiki/Isolation_forest)** or Local Outlier Factor (LOF) to process high-dimensional sensor streams—such as exhaust temperature, boost pressure, and engine speed—without needing prior labels.
+* **Anomaly Extraction:** I will implement [Isolation Forests](https://en.wikipedia.org/wiki/Isolation_forest) or Local Outlier Factor (LOF) to process high-dimensional sensor streams—such as exhaust temperature, boost pressure, and engine speed—without needing prior labels.
 * **Severity Ranking:** I am developing a ranking mechanism to present the most statistically significant anomalies to engineers first, reducing alert fatigue and focusing on the most severe risks.
 
 ### 2. Phase II: The Weak Learner & Feedback Loop
@@ -22,7 +22,7 @@ I have designed the architecture to utilize a hybrid evolution pipeline: startin
 # 📊 Implementation Strategy & Foundations
 
 ## 📈 Data & Technical Methodology
-To develop and validate the framework, I am using a three-tiered data approach grounded in **[Condition-Based Maintenance (CBM)](https://en.wikipedia.org/wiki/Condition-based_maintenance)** principles:
+To develop and validate the framework, I am using a three-tiered data approach grounded in [Condition-Based Maintenance (CBM)](https://en.wikipedia.org/wiki/Condition-based_maintenance) principles:
 
 * **Synthetic "Degradation" Generation:** I use Python scripts to simulate sensor telemetry, allowing me to "inject" specific failure modes to test the sensitivity of my unsupervised models.
 * **Public Industrial Benchmarks:** I validate my models against established datasets to ensure they are robust against real-world mechanical physics.
